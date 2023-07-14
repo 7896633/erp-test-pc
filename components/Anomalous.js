@@ -132,7 +132,7 @@ const Anomalous = () => {
                     <tbody className=''>
                     {
                         anomalous.map((item,index)=>(
-                            <tr className='h-[40px]  odd:bg-[#d4dfff] odd:divide-none divide-x divide-gray-300 text-sm'>
+                            <tr key={index} className='h-[40px]  odd:bg-[#d4dfff] odd:divide-none divide-x divide-gray-300 text-sm'>
                                 <td>{item.id}</td>
                                 <td>{item.number}</td>
                                 <td>{item.supplier}</td>
